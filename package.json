@@ -1,0 +1,29 @@
+{
+  "name": "salam-react",
+  "version": "1.0.0",
+  "description": "- This repo is to reach to top level 🚀 in building large scale application using React.",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hafizkh/salam-react.git"
+  },
+  "author": "Hafiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hafizkh/salam-react/issues"
+  },
+  "homepage": "https://github.com/hafizkh/salam-react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
