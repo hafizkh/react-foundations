@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "- This repo is to reach to top level 🚀 in building large scale application using React.",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {

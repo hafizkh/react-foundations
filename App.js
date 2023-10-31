@@ -1,31 +1,22 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-// const h1Tag = React.createElement("h1", { id: "heading" }, "Hello World from React")
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// console.log(h1Tag)
-
-// const root = ReactDOM.createRoot(document.getElementById("root"))
-
-// root.render(h1Tag)
-
-const parent = React.createElement("div", { id: "parent" },
-    [
-        React.createElement("div", { id: "child" },
-            [
-                React.createElement("h1", {}, "I am a Salam React"),
-                React.createElement("h2", {}, "I am an h2 tag")
-            ]),
-        React.createElement("div", { id: "child2" },
-            [
-                React.createElement("h1", {}, "I am an h1 tag"),
-                React.createElement("h2", {}, "I am an h2 tag")
-            ])
-    ]
-
+const heading = (
+    <h1 className="heading">h1 tag</h1>
+)
+const NavBar = () => (
+    <div className="container">
+        <h1 id="heading">NavBar</h1>
+        <Logo />
+    </div>
 )
 
-console.log(parent)
+const Logo = () => (
+    <div className="logo">
+        <h1>Logo</h1>
+    </div>
+)
 
+console.log(heading)
 const root = ReactDOM.createRoot(document.getElementById("root"))
-
-root.render(parent)
+root.render(<NavBar />)

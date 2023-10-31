@@ -1,4 +1,5 @@
-#heading {
+.heading {
   background-color: yellowgreen;
   color: red;
+  border: 2px solid red;
 }
