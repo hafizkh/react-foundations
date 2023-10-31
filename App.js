@@ -1,22 +1,48 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = (
-    <h1 className="heading">h1 tag</h1>
-)
-const NavBar = () => (
-    <div className="container">
-        <h1 id="heading">NavBar</h1>
-        <Logo />
-    </div>
-)
+const name = "Hafiz"
+const age = 37
+const greet = <p>Hello {name} and you are {age} years old</p>
 
-const Logo = () => (
-    <div className="logo">
-        <h1>Logo</h1>
-    </div>
-)
+const Header = () => {
+    return (
+        <div>
+            <h1>Header</h1>
+            <NavBar />
+        </div>
+    )
+}
 
-console.log(heading)
+const Footer = () => {
+    return (
+        <div>
+            <h1>Footer</h1>
+            {Header()}
+        </div>
+    )
+}
+
+const NavBar = () => {
+    return (
+        <div>
+            <h2>NavBar is inside in Header component</h2>
+            {greet}
+            {/* Example */}
+            {45 - 5}
+        </div>
+    )
+}
+
+
+const App = () => {
+    return (
+        <div>
+            <Header />
+            <Footer />
+        </div>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<NavBar />)
+root.render(<App />)
