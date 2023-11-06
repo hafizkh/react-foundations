@@ -1,4 +1,4 @@
-const resData = [
+let resData = [
     {
         "info": {
             "id": "10208",
@@ -11,7 +11,7 @@ const resData = [
                 "Burgers",
                 "American"
             ],
-            "avgRating": 4.2,
+            "avgRating": 3.2,
             "feeDetails": {
                 "restaurantId": "10208",
                 "fees": [
