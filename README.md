@@ -27,3 +27,5 @@
 - Tree Shaking - removes the unused code
 - Lazy Loading
 - Different bundles of prod and dev
+
+### [Project Link - 🚀 Food App](https://borcelle-food.netlify.app/)
