@@ -10,12 +10,22 @@ export const navStyling = {
 }
 
 export const styleCard = {
-    width: "200px",
-    height: "400px",
-    backgroundColor: "#f0f0f0",
-    margin: "5px",
-    borderRadius: "10px",
-    boxShadow: "0 0 10px 0 rgb(163, 145, 145)",
-    overflow: "hidden",
-    padding: "9px",
+    // width: "200px",
+    // height: "400px",
+    // backgroundColor: "#f0f0f0",
+    // margin: "5px",
+    // borderRadius: "10px",
+    // boxShadow: "0 0 10px 0 rgb(163, 145, 145)",
+    // overflow: "hidden",
+    // padding: "9px",
+    width: '200px',
+    height: '400px',
+    backgroundColor: '#f0f0f0',
+    margin: '5px',
+    borderRadius: '10px',
+    boxShadow: '0 0 10px 0 rgb(163, 145, 145)',
+    overflow: 'hidden',
+    padding: '9px',
+    display: 'flex',
+    flexDirection: 'column'
 }
