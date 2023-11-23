@@ -2072,4 +2072,5 @@ let resData = [
     }
 ]
 
+
 export default resData;
