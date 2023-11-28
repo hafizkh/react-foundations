@@ -37,8 +37,8 @@ const Body = () => {
         */
 
 
-        setResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     return resList.length === 0 ? (
