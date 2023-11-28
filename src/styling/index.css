@@ -1,6 +1,4 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   border: 1px solid black;
 }
 
@@ -8,16 +6,22 @@
   width: 7rem;
   border-radius: 50%;
 }
-
-.nav-items > ul {
-  font-size: large;
+.nav-items {
   display: flex;
-  list-style: none;
+  align-items: center;
+  padding: 10px 20px;
+}
+.nav-items > ul {
+  font-size: x-large;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-items > ul > li {
-  padding: 10px;
-  margin: 20px;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
 .filter {
@@ -44,9 +48,33 @@
   align-items: center;
   margin: 6px;
 }
-.filter-btn {
+.search {
+  display: flex;
   margin: 10px;
+}
+.search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  outline: none; /* Remove default input focus outline */
+}
+
+/* Style for the search button */
+.search-btn {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 1px solid #4caf50;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
+  outline: none; /* Remove default button focus outline */
+}
+
+/* Hover effect for the search button */
+.search-btn:hover {
+  background-color: #45a049;
+  border-color: #45a049;
 }
 
 .filter-btn {
@@ -62,9 +90,40 @@
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 10px;
 }
 
 .filter-btn:hover {
   background: linear-gradient(to bottom, #2e8540, #4caf50);
   color: #fff;
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* margin: 6px; */
+}
+
+.shimmer-card {
+  width: 12%;
+  height: 12rem;
+  border-radius: 10px;
+  background-color: #f6f7f8;
+  padding: 5px;
+  margin: 10px;
+}
+
+.auth-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 15px;
+}
+
+.auth-buttons button:hover {
+  background-color: #45a049;
 }

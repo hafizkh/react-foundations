@@ -1,6 +1,9 @@
+import { useState } from "react"
 import { LOGO_URL, navStyling } from "../utils/constants"
 
 const Header = () => {
+    const [btn, setBtn] = useState("Login")
+
     return (
         <div style={navStyling} className="header">
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -12,9 +15,18 @@ const Header = () => {
                     <li>About</li>
                     <li>Offers</li>
                     <li>Contact</li>
+                    <div className="auth-buttons">
+
+                        <button className="login" onClick={() => {
+                            btn === "Login" ?
+                                setBtn("Logout") :
+                                setBtn("Login")
+                        }}>{btn}</button>
+                        <button>Signup</button>
+                    </div>
                 </ul>
             </nav>
-        </div>
+        </div >
     )
 }
 
