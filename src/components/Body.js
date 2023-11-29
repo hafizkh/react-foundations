@@ -54,6 +54,7 @@ const Body = () => {
                         const filteredRes = resList.filter((res) => res.info.name.toLowerCase().includes(searchText))
                         // console.log(filteredRes)
                         setFilteredResList(filteredRes)
+                        setSearchText("")
                     }}>Search</button>
                 </div>
 
