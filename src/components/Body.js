@@ -51,7 +51,7 @@ const Body = () => {
                         setSearchText(e.target.value)
                     }} />
                     <button className="search-btn" onClick={() => {
-                        const filteredRes = resList.filter((res) => res.info.name.toLowerCase().includes(searchText))
+                        const filteredRes = resList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                         // console.log(filteredRes)
                         setFilteredResList(filteredRes)
                         setSearchText("")

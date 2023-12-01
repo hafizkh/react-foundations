@@ -9,11 +9,11 @@ const RestaurantCard = ({ resData }) => {
             <img className="res-pic" src={CDN_URL + cloudinaryImageId} alt="restaurant" />
             <div>
                 <h3>{name}</h3>
-                <h4>{cuisines.join(", ")}</h4>
-                <h4>{costForTwo}</h4>
-                <h4>{areaName}</h4>
-                <h4>{avgRating}</h4>
-                <h4>{deliveryTime} minutes</h4>
+                <h5>{cuisines.join(", ")}</h5>
+                <p>{costForTwo}</p>
+                <p>{areaName}</p>
+                <p>{avgRating}💫 •{deliveryTime} minutes</p>
+
             </div>
         </div>
     )
