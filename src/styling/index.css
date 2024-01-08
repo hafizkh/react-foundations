@@ -63,7 +63,7 @@
 
 /* Style for the search button */
 .search-btn {
-  padding: 8px 12px;
+  padding: 10px 15px;
   background-color: #4caf50;
   color: #fff;
   border: 1px solid #4caf50;
@@ -165,7 +165,6 @@ label {
   color: #555;
 }
 
-input,
 select,
 textarea {
   width: 100%;
@@ -176,7 +175,7 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Style the submit button */
+/* Style the submit button 
 .submit-button {
   background-color: #4caf50;
   color: white;
@@ -190,9 +189,10 @@ textarea {
   background-color: #45a049;
 }
 
-/* Add some responsive styles */
+/* Add some responsive styles 
 @media (max-width: 600px) {
   .form-container {
     width: 80%;
   }
 }
+  */
