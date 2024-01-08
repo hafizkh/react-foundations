@@ -8,14 +8,15 @@ const Body = () => {
     const [resList, setResList] = useState([])
     const [filteredResList, setFilteredResList] = useState([])
     const [searchText, setSearchText] = useState("")
-    console.log("body rensderh")
+
+    console.log("body Rendered")
 
     useEffect(() => {
         fetchData()
     }, [])
 
     const fetchData = async () => {
-        const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        const response = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
         const json = await response.json()
         console.log(json)
         /*
@@ -51,9 +52,10 @@ const Body = () => {
                         setSearchText(e.target.value)
                     }} />
                     <button className="search-btn" onClick={() => {
-                        const filteredRes = resList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
-                        // console.log(filteredRes)
-                        setFilteredResList(filteredRes)
+                        const filteredResByName = resList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
+
+                        // console.log("Name of Restaurant Filtered", filteredResByName)
+                        setFilteredResList(filteredResByName)
                         setSearchText("")
                     }}>Search</button>
                 </div>

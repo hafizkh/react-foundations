@@ -1,8 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { LOGO_URL, navStyling } from "../utils/constants"
 
 const Header = () => {
     const [btn, setBtn] = useState("Login")
+
+    useEffect(() => {
+        console.log("useEffect Called")
+    }, [btn])
 
     return (
         <div style={navStyling} className="header">
@@ -16,7 +20,6 @@ const Header = () => {
                     <li>Offers</li>
                     <li>Contact</li>
                     <div className="auth-buttons">
-
                         <button className="login" onClick={() => {
                             btn === "Login" ?
                                 setBtn("Logout") :
