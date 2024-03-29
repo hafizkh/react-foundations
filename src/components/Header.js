@@ -3,9 +3,10 @@ import { LOGO_URL, navStyling } from "../utils/constants"
 
 const Header = () => {
     const [btn, setBtn] = useState("Login")
+    console.log("Header Rendered")
 
     useEffect(() => {
-        console.log("useEffect Called")
+        console.log("useEffect Called from the header")
     }, [btn])
 
     return (

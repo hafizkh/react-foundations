@@ -9,16 +9,16 @@ const Body = () => {
     const [filteredResList, setFilteredResList] = useState([])
     const [searchText, setSearchText] = useState("")
 
-    console.log("body Rendered")
 
     useEffect(() => {
+        console.log("body Rendered")
         fetchData()
     }, [])
 
     const fetchData = async () => {
         const response = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
         const json = await response.json()
-        console.log(json)
+        // console.log(json)
         /*
         let cards = json.data.cards
         // console.log(cards)
@@ -38,8 +38,8 @@ const Body = () => {
         */
 
 
-        setResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        setFilteredResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilteredResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     return resList.length === 0 ? (

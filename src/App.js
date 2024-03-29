@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body"
@@ -12,25 +12,32 @@ const App = () => {
     return (
         <div>
             <Header />
-            <Body />
+            <Outlet />
         </div>
     )
 }
+
 const appRouter = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <App />,
+        children: [
+            {
+                path: '/',
+                element: <Body />
+            },
+            {
+                path: '/about',
+                element: <About />
+            }, {
+                path: '/contact',
+                element: <Contact />
+            }
+        ],
         errorElement: <Error />
     },
-    {
-        path: "/about",
-        element: <About />
-    },
-    {
-        path: "/contact",
-        element: <Contact />
-    }
 ])
+
 
 // const h1 = React.createElement("h1", {}, "Hello All")
 const root = ReactDOM.createRoot(document.getElementById("root"))
