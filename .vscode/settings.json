@@ -1,4 +1,6 @@
 {
   "editor.fontLigatures": false,
-  "editor.fontFamily": "Fira Code"
+  "editor.fontFamily": "Fira Code",
+  "workbench.colorCustomizations": {},
+  "files.autoSaveDelay": 1000
 }

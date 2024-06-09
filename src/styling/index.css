@@ -24,7 +24,17 @@
   margin-right: 15px;
   font-weight: bold;
 }
-
+.menu {
+  margin: 1rem;
+}
+.menu > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > ul > li {
+  margin: 15px;
+}
 .filter {
   display: flex;
   justify-content: space-between;
@@ -197,3 +207,9 @@ textarea {
   }
 }
   */
+
+.user-card {
+  padding: 1rem;
+  border: 1px solid rgb(83, 77, 77);
+  margin: 0.5rem;
+}

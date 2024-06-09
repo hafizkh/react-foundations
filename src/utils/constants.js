@@ -2,6 +2,8 @@ export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_l
 
 export const LOGO_URL = "https://marketplace.canva.com/EAFowsrK6x8/1/0/800w/canva-red-and-yellow-catering-flat-illustrative-food-place-logo-vSIfGMbT6qI.jpg"
 
+export const RES_URL_MENU = "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId="
+
 export const navStyling = {
     backgroundColor: "#f0f0f0",
     padding: "10px",
