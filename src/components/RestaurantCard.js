@@ -2,7 +2,13 @@ import { CDN_URL, styleCard } from "../utils/constants"
 
 const RestaurantCard = ({ resData }) => {
 
-    const { name, cuisines, avgRating, costForTwo, areaName, cloudinaryImageId } = resData.info
+    const {
+        name,
+        cuisines,
+        avgRating,
+        costForTwo,
+        areaName,
+        cloudinaryImageId } = resData.info
     const { deliveryTime } = resData.info.sla
     return (
         <div style={styleCard} className="res-card">
