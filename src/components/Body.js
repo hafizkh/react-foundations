@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import RestaurantCard from "./RestaurantCard"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom"
+import useNetworkStatus from "../utils/useNetworkStatus"
 
 
 const Body = () => {
@@ -40,6 +41,10 @@ const Body = () => {
 
         setResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         setFilteredResList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    }
+    const onlineState = useNetworkStatus()
+    if (onlineState === false) {
+        return <h1>Hello Your Internet is not working, please play Street fighter</h1>
     }
 
     return resList.length === 0 ? (
